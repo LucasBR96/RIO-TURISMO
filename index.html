@@ -12,10 +12,10 @@
 
 <body>
    <!-- Links no cabeçalho -->
-   <nav class="navbar navbar-light bg-light navbar-expand-md"> <!-- Barra de nav sexy -->
+   <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top"> <!-- Barra de nav sexy -->
    	<div class="container">
 	   <a class="navbar-brand" href="#">
-		   <img src="assets/images/Rio-Turismo.png" style="width: 200px" alt="Rio Turismo">
+		   <img src="assets/images/Rio-Turismo.png" style="width:80px" alt="Rio Turismo">
 	   </a>
 	   
 	   <!-- Botão de Menu  --> 
@@ -32,9 +32,10 @@
 			   <a class="nav-link nav-item"  href="#Excursoes">Excursões</a>
 			   <!-- Menu tipo dropdown -->
 			   <div class="dropdown">
-				   <a class="nav-link nav-item dropdown-toggle" data-toggle="dropdown" href="#">
-				   Passeios Culturais</a>
-				   <div class="dropdown menu">
+				   <a class="nav-ittem nav-link dropdown-toggle" data-toggle="dropdown" href="#">
+				   	Passeios Culturais
+				   </a>
+				   <div class="dropdown-menu">
 				   	<a class="dropdown-item" href="#">Museus</a>
 				   	<a class="dropdown-item" href="#">Feiras</a>
 				   	<a class="dropdown-item" href="#">Bibliotecas</a>
@@ -49,24 +50,66 @@
 		   <!-- Essas aqui à direita -->
 		   <div class="navbar-nav">
 			   <a class="nav-link nav-item"  href="#Excursoes">Meus Pedidos</a>
-			   <a class="nav-link nav-item"  href="#janelamodal">Entrar</a>
+			   <a class="nav-link nav-item"  href="#janelamodal">
+				   <i class="fas fa-sign-in-alt"></i> Entrar
+			   </a>
 		   </div>
 	   </div>
         </div> 
    </nav>
-   <img src="assets/images/panoramica1.jpg">
+   <div class="bgimage" style = "margin-top: 69px;"></div>
 
    <br>
-   <br>
 
-   <h4 id="passeios">Nossos Passeios</h4>
+   <h4 id="passeios" class="text-center mb-3">Nossos Passeios</h4>
+	
+   <div class="card mb-4">
+	   <img src="assets/images/p-ciclovia.jpg" alt="Ciclovias">
+	   <div class="card-body">
+	   	<div class ="text-center">
+		   <p>Passeios de bicicleta</p>
+	   	</div>
 
-   <img src="assets/images/p-ciclovia.jpg" alt="Ciclovias">
-   <p>Passeio diário</p>
-   <p>O Rio possui uma extensa malha cicloviária. As principais vias começam na Marina da Glória
-   proxima ao Centro da cidade, Passando pela zona Sul até o Leblon</p>
-   <p>Niterói possui uma malha menor, saindo da região das barcas, passando por Icaraí, São Francisco
-   e Terminado em charitas</p>
+		 <p class="card-text text-justify">O Rio possui uma extensa malha cicloviária. As principais vias começam na Marina da Glória. proxima ao Centro da cidade, Passando pela zona Sul até o Leblon</p>
+	  	 <p class="card-text text-justify">Niterói possui uma malha menor, saindo da região das barcas, passando por Icaraí, São Francisco e Terminado em charitas</p>
+	   </div>
+   </div>
+
+   <div class="card mb-4">
+	   <img src="assets/images/p-cristo-redentor.jpg".jpg alt="">
+	   <div class="card-body">
+		   <div class = "text-center">
+			   <h5 class ="card-title">Cristo Redentor</h5>
+		   </div>
+		   <p class="card-text text-justify">
+			   Constrúida nos anos 1930 durante o período Vargas, a estátua é hoje considerada uma das sete maravilhas do mundo moderno. Além de ser um símbolo da natureza acolhedora
+			   do povo brasileiro, o monumento oferece uma excelente vista da Cidade Maravilhosa.
+		   </p>
+	   </div>
+   </div>
+
+   <div class="card mb-4">
+	   <img src="assets/images/p-pao-de-acucar.jpg" alt="">
+	   <div class="card-body">
+		   <div class = "text-center">
+			   <h5 class ="card-title">Pão de açúcar</h5>
+		   </div>
+		   <p class="card-text text-justify"></p>
+	   </div>
+   </div>
+
+   <div class="card mb-4">
+	   <img src="assets/images/p-copacabana.jpg" alt="">
+	   <div class="card-body">
+		   <div class = "text-center">
+			   <h5 class ="card-title">Copacabana</h5>
+		   </div>
+		   <p class="card-text text-justify"></p>
+	   </div>
+   </div>
+   
+
+   </div> 
 
    <script src="assets/js/jquery-3.3.1.js"></script>
    <script src="assets/js/popper.js"></script>
